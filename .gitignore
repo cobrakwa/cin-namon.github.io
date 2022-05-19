@@ -23,6 +23,7 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
+
 # Bower dependency directory (https://bower.io/)
 bower_components
 
@@ -89,3 +90,8 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# work in progress
+style.css
+hangman.js
+index.html

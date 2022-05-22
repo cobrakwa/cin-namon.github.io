@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
 <div class="container-fluid p-3">
@@ -18,7 +19,7 @@
        <div class="container_lives">
        <img src=/Users/cindyyu/Documents/code_projects/hangman/hangman_elements/lives.png>
        <div class="text-block"> 
-       <p id="lives">1</p>
+       <p id="lives">6</p>
        </div>
        </div>
       </div>
@@ -30,44 +31,56 @@
     
 
 <div class="container justify-content-center text-center p-5">
-    <img src=hangman_frame.png> <!will change depending on answer>
+    <img src=hangman_frame.png> <!--will change depending on answer-->
         <p style="padding: 20px; font-size: 18px; font-weight: 500; color:#3672CC;"> Guess the animal!</p>
-        <p id="answer">INPUT</p>  
+      <p id="answer_display">Python</p>  
+      <ul class="lines">
+          
+          <li class="line">___</li>
+          <li class="line">___</li>
+          <li class="line">___</li>
+          <li class="line">___</li>
+          <li class="line">___</li>
+          <li class="line">___</li>
+          
+
+      </ul>
   </div> 
     <div class="float-left"> <span id = 'mistakes'> </div>
     <div class="text-center">
   <div class="container">
     <ul id="keyboard">
-        <li class="letter">A</li>
-        <li class="letter">B</li>
-        <li class="letter">C</li>
-        <li class="letter">D</li>
-        <li class="letter">E</li>
-        <li class="letter">F</li>
-        <li class="letter">G</li>
-        <li class="letter">H</li>
-        <li class="letter">I</li>
-        <li class="letter">J</li>
-        <li class="letter">K</li>
-        <li class="letter">L</li>
-        <li class="letter">M</li>
-        <li class="letter">N</li>
-        <li class="letter">O</li>
-        <li class="letter">P</li>
-        <li class="letter">Q</li>
-        <li class="letter">R</li>
-        <li class="letter">S</li>
-        <li class="letter">T</li>
-        <li class="letter">U</li>
-        <li class="letter">V</li>
-        <li class="letter">W</li>
-        <li class="letter">X</li>
-        <li class="letter">Y</li>
-        <li class="letter">Z</li>
+        <li class="letter" id="A" data-id="A">A</li>
+        <li class="letter" id="B" data-id="B">B</li>
+        <li class="letter" id="C" data-id="C">C</li>
+        <li class="letter" id="D" data-id="D">D</li>
+        <li class="letter" id="E" data-id="E">E</li>
+        <li class="letter" id="F" data-id="F">F</li>
+        <li class="letter" id="G" data-id="G">G</li>
+        <li class="letter" id="H" data-id="H">H</li>
+        <li class="letter" id="I" data-id="I">I</li>
+        <li class="letter" id="J" data-id="J">J</li>
+        <li class="letter" id="K" data-id="K">K</li>
+        <li class="letter" id="L" data-id="L">L</li>
+        <li class="letter" id="M" data-id="M">M</li>
+        <li class="letter" id="N" data-id="N">N</li>
+        <li class="letter" id="O" data-id="O">O</li>
+        <li class="letter" id="P" data-id="P">P </li>
+        <li class="letter" id="Q" data-id="Q">Q</li>
+        <li class="letter" id="R" data-id="R">R</li>
+        <li class="letter" id="S" data-id="S">S</li>
+        <li class="letter" id="T" data-id="T">T</li>
+        <li class="letter" id="U" data-id="U">U</li>
+        <li class="letter" id="V" data-id="V">V</li>
+        <li class="letter" id="W" data-id="W">W</li>
+        <li class="letter" id="X" data-id="X">X</li>
+        <li class="letter" id="Y" data-id="Y">Y</li>
+        <li class="letter" id="Z" data-id="Z">Z</li>
     </ul>
 </div>
    
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/keyboard.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

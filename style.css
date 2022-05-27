@@ -138,5 +138,13 @@
 
   }
   
+  #lives {
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
+  
+  #lives-img {
+    padding-left: 20px;
+  }
 
   

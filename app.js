@@ -211,7 +211,9 @@ function hangnimation() {
     }
 };
 
-document.querySelector('.reset-btn').addEventListener('click',newWord);
+document.querySelector('.reset-btn').addEventListener('click', () => {
+    location.reload();
+});
 
 function newWord(){
     sendApiRequest();

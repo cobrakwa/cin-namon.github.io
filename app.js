@@ -10,6 +10,9 @@ let lines = null;
 //counter to track number of wrongs to draw hangman
 var counter = 0;
 
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
 async function sendApiRequest(){
     let response = await fetch(`https://opentdb.com/api.php?amount=30`);
     let data = await response.json();
@@ -133,14 +136,15 @@ function display_wrong_input(){
 }
 
 //initial hangman drawing
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
+function setup_hangman() {
 ctx.moveTo(25, 25);
 ctx.lineTo(25,200);
 ctx.stroke();
 ctx.moveTo(25, 25);
 ctx.lineTo(175, 25);
 ctx.stroke();
+};
+setup_hangman();
 
 function hang3() {
     ctx.moveTo(100, 100);
@@ -227,6 +231,9 @@ function newWord(){
     //restore 6 lives
     document.querySelector("#lives").textContent = 6;
 
+    // initialise hangman
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    setup_hangman();
     
 }   
 
